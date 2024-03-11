@@ -15,7 +15,7 @@
 			]
 		},
 	// Install app dependencies.
-	"postCreateCommand": "pip3 install --user -r requirements.txt",
+	"postCreateCommand": "pip install -r requirements.txt",
 	"features": {
 		"ghcr.io/rocker-org/devcontainer-features/miniforge:1": {}
 		}
