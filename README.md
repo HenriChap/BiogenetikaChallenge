@@ -12,3 +12,5 @@ To do so, run:
 python app.py youremail@mail.com ID1 ID2 ...
 ```
 Remember to use your email signed to Entrez and use up to 10 IDs each time. The shortest FASTA ID will be provided.
+
+Attention: if more than one ID have the shortest sequence size, only the first will be output
