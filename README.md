@@ -7,7 +7,7 @@ From [Rosalind](https://rosalind.info/problems/frmt/)
 
 Return: The shortest of the strings associated with the IDs in FASTA format."
 
-To do so, run:
+## To do so, run:
 ```bash
 python app.py youremail@mail.com ID1 ID2 ...
 ```
