@@ -15,7 +15,7 @@
 			]
 		},
 	// Install app dependencies.
-	"postCreateCommand": "pip install -r requirements.txt",
+	"postCreateCommand": "pip install biopython",
 	"features": {
 		"ghcr.io/rocker-org/devcontainer-features/miniforge:1": {}
 		}
