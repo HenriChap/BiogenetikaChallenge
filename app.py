@@ -8,5 +8,10 @@ if len(arguments) > 11:
     sys.exit()
 Entrez.email = sys.argv[1]
 handle = Entrez.efetch(db="nucleotide", id=sys.argv[2:], rettype="fasta")
-records = handle.read()
-print(records)
+records = list (SeqIO.parse(handle, "fasta"))
+result = float('inf')
+for record in records:
+    if result > len(record.seq):
+        result = len(record.seq)
+        resultSeq = record
+print(resultSeq)
