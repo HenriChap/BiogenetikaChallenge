@@ -9,9 +9,9 @@ if len(arguments) > 11:
 Entrez.email = sys.argv[1]
 handle = Entrez.efetch(db="nucleotide", id=sys.argv[2:], rettype="fasta")
 records = list (SeqIO.parse(handle, "fasta"))
-result = float('inf')
+size = float('inf')
 for record in records:
-    if result > len(record.seq):
-        result = len(record.seq)
-        resultSeq = record
-print(resultSeq)
+    if size > len(record.seq):
+        size = len(record.seq)
+        result = record
+print(result)
