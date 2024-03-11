@@ -1,7 +1,7 @@
 # BiogenetikaChallenge
 ## Automated data retrieve from Entrez
 
-From [Rosalind] (https://rosalind.info/problems/frmt/)
+From [Rosalind](https://rosalind.info/problems/frmt/)
 
 "Given: A collection of n (n≤10) GenBank entry IDs.
 
