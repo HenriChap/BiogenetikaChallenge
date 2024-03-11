@@ -1,6 +1,23 @@
 {
-	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	
+	"image": "mcr.microsoft.com/devcontainers/python:0-3.11-bullseye",
+	"customizations": {
+		"codespaces": {
+			"openFiles": [
+				"README.md"
+			]
+		},
+		"vscode": {
+			"settings": {},
+			"extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance"
+			]
+		},
+	// Install app dependencies.
+	"postCreateCommand": "pip3 install --user -r requirements.txt",
 	"features": {
 		"ghcr.io/rocker-org/devcontainer-features/miniforge:1": {}
+		}
 	}
 }
